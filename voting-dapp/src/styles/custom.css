@@ -1,0 +1,64 @@
+/* Correction du conteneur principal */
+.main-container {
+  min-height: calc(100vh - 64px); /* Hauteur de l'écran moins la hauteur de la navbar */
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Amélioration de la lisibilité du texte */
+.text-content {
+  color: #e2e8f0; /* Couleur de texte plus claire */
+  line-height: 1.6;
+}
+
+/* Correction des cartes de fonctionnalités */
+.feature-card {
+  background: rgba(30, 41, 59, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Correction des boutons */
+.action-button {
+  background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.action-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Correction du pied de page */
+.footer {
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem 0;
+  margin-top: auto;
+}
+
+/* Correction de la mise en page responsive */
+@media (max-width: 768px) {
+  .main-container {
+    padding: 1rem 0.5rem;
+  }
+  
+  .feature-card {
+    margin-bottom: 1rem;
+  }
+}
